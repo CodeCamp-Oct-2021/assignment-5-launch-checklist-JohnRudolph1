@@ -3,7 +3,16 @@ require('isomorphic-fetch');
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
    // Here is the HTML formatting for our mission target div.
-   
+//    document.getElementById('missionTarget').innerHTML =              
+//                      `<h2>Mission Destination</h2>
+//                 <ol>
+//                     <li>Name:${json[randomPlanet].name} </li>
+//                     <li>Diameter:${json[randomPlanet].diameter} </li>
+//                     <li>Star: ${json[randomPlanet].star}</li>
+//                     <li>Distance from Earth:${json[randomPlanet].distance} </li>
+//                     <li>Number of Moons:${json[randomPlanet].moons} </li>
+//                 </ol>
+//                 <img src="${json[randomPlanet].imageUrl}">`
  
 
 // function validateInput(testInput) {
