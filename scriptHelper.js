@@ -1,8 +1,8 @@
-// Write your helper functions here!
-require('isomorphic-fetch');
+// // Write your helper functions here!
+// require('isomorphic-fetch');
 
-function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
-   // Here is the HTML formatting for our mission target div.
+// function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
+// //    Here is the HTML formatting for our mission target div.
 //    document.getElementById('missionTarget').innerHTML =              
 //                      `<h2>Mission Destination</h2>
 //                 <ol>
@@ -55,46 +55,60 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 // }
 
 
-async function myFetch() {
-    let planetsReturned;
+// async function myFetch() {
+//     let planetsReturned;
 
-    planetsReturned = await fetch("handlers.education.launchcode.org/static/planets.json").then( function(response) {
-         return response.json()
+//     planetsReturned = await fetch("handlers.education.launchcode.org/static/planets.json").then( function(response) {
+//           response.json() 
+//              return planetsReturned
+         
           
-        });
+// function pickPlanet(planets) {
+//     window.addEventListener('load', function() {
+//         planets = fetch("handlers.education.launchcode.org/static/planets.json").then(function (response) {
+//             response.json().then(function (json){
+            
+//         });
 
-    return planetsReturned;
-}
+//         return planetsReturned;
+//     })
+// })
+//         let randomPlanet = Math.floor(Math.random() * json.length)
+//                 console.log(json[randomPlanet].name);
+               
+                    
+// window.addEventListener("load", function () {
+//   //obtain the planets object using fetch/json
+//   this.fetch("handlers.education.launchcode.org/static/planets.json").then(
+//     function (response) {
+//       response.json().then(function (json) {
+//         // create variable to equal random planet pulled from object * json.length or 5
+//         let randomPlanet = Math.floor(Math.random() * json.length);
+//         //print randomPlanet to console to ensure it works
+//         // console.log(json[randomPlanet].name);
+//         let div = document.getElementById("missionTarget");
+//         div.innerHTML =
+//           //reference object pulled during the fetch at the index of random.property of object
+//           `<h2>Mission Destination</h2>
+//               <ol>
+              
+//                   <li>Name:${json[randomPlanet].name} </li>
+//                   <li>Diameter:${json[randomPlanet].diameter} </li>
+//                   <li>Star: ${json[randomPlanet].star}</li>
+//                   <li>Distance from Earth:${json[randomPlanet].distance} </li>
+//                   <li>Number of Moons:${json[randomPlanet].moons} </li>
+//               </ol>
+//               <img src="${json[randomPlanet].imageUrl}">`;
+//                 });
+//             }
+//         );
+//     });
+// }
+// }    
+// }
 
-function pickPlanet(planets) {
-    window.addEventListener('load', function() {
-        planets = fetch("handlers.education.launchcode.org/static/planets.json").then(function (response) {
-            then(function (json) {
-                let randomPlanet = Math.floor(Math.random() * json.length)
-                console.log(json[randomPlanet].name);
-                document.getElementById('missionTarget').innerHTML =              
-                     `<h2>Mission Destination</h2>
-                <ol>
-                    <li>Name:${json[randomPlanet].name} </li>
-                    <li>Diameter:${json[randomPlanet].diameter} </li>
-                    <li>Star: ${json[randomPlanet].star}</li>
-                    <li>Distance from Earth:${json[randomPlanet].distance} </li>
-                    <li>Number of Moons:${json[randomPlanet].moons} </li>
-                </ol>
-                <img src="${json[randomPlanet].imageUrl}">`
-   
-                    }
-                )
-            })
-        })
-    }
-}
-   
-           
-
-
-module.exports.addDestinationInfo = addDestinationInfo;
-module.exports.validateInput = validateInput;
-module.exports.formSubmission = formSubmission;
-module.exports.pickPlanet = pickPlanet; 
-module.exports.myFetch = myFetch;
+// module.exports.addDestinationInfo = addDestinationInfo;
+// module.exports.validateInput = validateInput;
+// module.exports.formSubmission = formSubmission;
+// module.exports.pickPlanet = pickPlanet; 
+// module.exports.myFetch = myFetch;
